@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polas Asados</title>
+  <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Link to File CSS-->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link to Remix Icons -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+  <!--header section start -->
+  <header class="header"  data-aos="fade-down"  data-aos-duration="1000">
+    <div class="logo">
+      <figure class="logo--img">
+        <a href="#">
+          <img src="./Images/logo.png" alt="">
+        </a>
+      </figure>
+      <p>Gadel</p>
+    </div>
+
+    <nav class="navbar">
+      <a class="navbar--link" href="#home">Home</a>
+      <a class="navbar--link" href="#about">About</a>
+      <a class="navbar--link" href="#test">testimoniols</a>
+      <a class="navbar--link" href="#services">Services</a>
+      <a class="navbar--link" href="#menu">Menu</a>
+      <a class="navbar--link" href="#contact">Contact</a>
+      <i  class="ri-close-circle-fill" id="close"></i>
+    </nav>
+
+    <div class="icons">
+      <div class="ri-moon-fill" id="mode-switch"></div>
+      <div class="cart">
+        <div class=" fas fa-shopping-cart" id="cart-btn"></div>
+
+      </div>
+      <div class=" fas fa-bars" id="menu-btn"></div>
+    </div>
+    <div class="cart-items-container">
+      <i  class="ri-close-circle-fill" id="delete"></i>
+
+      <h2 class="cart-title">Your Cart:</h2>
+      <ul id="cart-items">
+      </ul>
+    </div>
+  </header>
+  <!--header section end -->
+
+  <!-- Home start -->
+<section class="home" id="home">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1 class="section-title main-title" data-aos="fade-up"  data-aos-duration="2000"   >Cure Hun<span class="rare">ger</span></h1>
+    <p class="section-para" id="home-para"  data-aos="fade-up"  data-aos-duration="1500">To provide support for my family and ensure a quality education for my children. This motivation drives me to wake up early on Saturdays and Sundays to start preparing food and chickens for my business.</p>
+    <button class = "section-btn "  data-aos="fade-up"  data-aos-duration="1000">
+      Check Out
+      <i class="ri-arrow-right-line"></i>
+    </button>
+
+
+  </div>
+  <div class="informations" data-aos="fade-up" data-aos-duration="1000"   data-aos-delay="500"
+
+  >
+    <fieldset>
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Enter your email" name="email" id="email" class="email">
+    </fieldset>
+    <fieldset>
+      <label for="time">Time:</label>
+      <input type="number" placeholder="The time you want" name="time" id="time" class="time">
+    </fieldset>
+    <fieldset>
+      <label for="qa">Quantity:</label>
+      <input type="number" placeholder="1/2/3/4" name="qa" class="qa">
+    </fieldset>
+    <button onclick="reg()" class="submit">Submit</button>
+  </div>
+</section>
+<!-- Home End -->
+
+<!-- About Start -->
+<section class=" section-padding about" id="about">
+ <figure class="about--img " data-aos="fade-right" data-aos-duration="1700">
+  <img src="./Images/about.png" alt="" class="structure">
+  <img src="./Images/design.png" alt="" class="design">
+  <img src="./Images/design-2.png" alt="" class=" d-2">
+
+ </figure>
+ <div class="about--content"  data-aos="fade-left" data-aos-duration="1700">
+  <h2>Polas Asados</h2>
+  <h3>Río S. Salvador 1053, Pueblo Nuevo IV, 66646 Cdad. Apodaca, N.L.</h3>
+  <p>Gabriel's journey began some years ago when he worked at a local roasted chicken restaurant. This experience, coupled with the unwavering support and encouragement from close friends and family, inspired him to take a leap of faith. In 2019, he transformed his backyard into a takeout restaurant, driven by a powerful motivation: "To provide support for my family and ensure a quality education for my children."</p>
+  <button class="about--content__btn btn" >Learn More</button>
+
+  <section class="modal-container" >
+    <div class="modal">
+        <h1 class="modal-title">More Information</h1>
+        <p class="modal--para">
+          This dedication to his family became the cornerstone of Gabriel's work ethic. Every Saturday and Sunday, he rises early to begin the meticulous preparation of food and chickens for his customers. His commitment to quality and family values quickly resonated with the community, and over the past five years, his takeout restaurant has flourished
+          </p>
+        <i  class="ri-close-circle-fill" id="closeTrigger"></i>
+    </div>
+    
+</section>
+ </div>
+</section>
+<!-- About End -->
+
+<!-- Testimoniols Start -->
+ <section class=" site" id="test">
+    <div class="test-container">
+      <div class="testi">
+        <div class="head">
+          <h3 data-aos="fade-up" data-aos-duration="1800">Testimonials.</h3>
+          <p data-aos="fade-up" data-aos-duration="1500">See what people are saying..</p>
+        </div>
+        <div class="body swiper ">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="wrapper">
+                <div class="thumbnail">
+                  <img src="./Images/person1.avif"/>
+                </div>
+                <div class="aside" data-aos="fade-down" data-aos-duration="1000">
+                  <p class="aside--para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate est voluptatum culpa, quas nesciunt ipsa laudantium? Quis tenetur id nostrum.</p>
+                  <div class="name">
+                    <h4 data-aos="fade-left" data-aos-duration="1700">Ahmad Malik</h4>
+                    <p data-aos="fade-left" data-aos-duration="1700">Graphic Designer</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="wrapper">
+                <div class="thumbnail">
+                  <img src="./Images/person4.avif"/>
+                </div>
+                <div class="aside">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate est voluptatum culpa, quas nesciunt ipsa laudantium? Quis tenetur id nostrum.</p>
+                  <div class="name">
+                    <h4>Wlaa homsi</h4>
+                    <p>teacher</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="wrapper">
+                <div class="thumbnail">
+                  <img src="./Images/person3.avif"/>
+                </div>
+                <div class="aside">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate est voluptatum culpa, quas nesciunt ipsa laudantium? Quis tenetur id nostrum.</p>
+                  <div class="name">
+                    <h4>Anas toel</h4>
+                    <p>Doctor</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination" data-aos="fade-up" data-aos-duration="1700"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev" data-aos="fade-left" data-aos-duration="1700"></div>
+          <div class="swiper-button-next" data-aos="fade-right" data-aos-duration="1700"></div>
+        </div>
+      </div>
+    </div>
+ </section>
+
+<!-- Testimoniols End -->
+
+
+
+<!-- History Start -->
+<section class="section-padding" id="services">
+  <div class="blog">
+    <div class="services--container">
+      <i class="fa-solid fa-utensils"></i>
+      <span class="num" data-val = "400">000</span>
+      <span class="text">Meals Delivered</span>
+    </div>
+
+    <div class="services--container">
+      <i class="fa-solid fa-smile-beam"></i>
+      <span class="num" data-val = "378">000</span>
+      <span class="text">Happy Customers</span>
+    </div>
+
+    <div class="services--container">
+      <i class="fa-solid fa-list"></i>
+      <span class="num" data-val = "245">000</span>
+      <span class="text">Menu Items</span>
+    </div>
+    <div class="services--container">
+      <i class="fa-solid fa-utensils"></i>
+      <span class="num" data-val = "200">000</span>
+      <span class="text">Five Stars</span>
+    </div>
+  </div>
+</section>
+
+<!-- History End -->
+
+
+<!-- Menu Start -->
+<section class="section-padding" id="menu">
+    <div class="menu--head">
+      <h2 data-aos="fade-up" data-aos-duration="2000">Our <span>Menu</span> </h2>
+      <p  data-aos="fade-up" data-aos-duration="1500">We have many discounts especially for hungries</p>
+    </div>
+
+    <div class="menu--container" >
+        <div class="menu--container__card"  data-aos="fade-up" data-aos-duration="1500">
+
+          <figure class="menu--container__card--img">
+               <img src="./menu/img-1.jpeg" alt="">
+                <button data-name = "Grilled Chicken" data-img = "./menu/img-1.jpeg" data-price = "160$" class = "mybtn">Add To Cart</button>
+          </figure>
+
+          <div class="menu--container__card--content">
+            <div class="row">
+              <h3 class = "cart-name">grilled Chicken</h3>
+              <div class="icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+
+            <p>If you are hungry eact chicken</p>
+            <span>160$</span>
+          </div>
+        </div>
+        <div class="menu--container__card"  data-aos="fade-up" data-aos-duration="1500">
+
+          <figure class="menu--container__card--img">
+               <img src="./menu/img-2.jpg" alt="">
+               <button data-name = "1/2 Grilled Chicken" data-img = "./menu/img-2.jpg" data-price = "90$" class = "mybtn">Add To Cart</button>
+          </figure>
+
+          <div class="menu--container__card--content">
+            <div class="row">
+              <h3 class = "cart-name">1/2 Grilled Chicken</h3>
+              <div class="icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+
+            <p>If you are hungry eact chicken</p>
+            <span>90$</span>
+          </div>
+        </div>
+        <div class="menu--container__card"  data-aos="fade-up" data-aos-duration="1500">
+
+          <figure class="menu--container__card--img">
+               <img src="./menu/img-3.jpeg" alt="">
+               <button data-name = "Sausages" data-img = "./menu/img-3.jpeg" data-price = "16$" class = "mybtn">Add To Cart</button>
+          </figure>
+
+          <div class="menu--container__card--content">
+            <div class="row">
+              <h3 class = "cart-name">Sausages</h3>
+              <div class="icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+
+            <p>If you are hungry eact chicken</p>
+            <span>16$</span>
+          </div>
+        </div>
+        <div class="menu--container__card"  data-aos="fade-up" data-aos-duration="1500">
+
+          <figure class="menu--container__card--img">
+               <img src="./menu/img-4.jpg" alt="">
+               <button data-name = "2 Grilled Chicken" data-img = "./menu/img-4.jpg" data-price = "350$" class = "mybtn">Add To Cart</button>
+          </figure>
+
+          <div class="menu--container__card--content">
+            <div class="row">
+              <h3 class = "cart-name">2 grilled Chicken</h3>
+              <div class="icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+
+            <p>If you are hungry eact chicken</p>
+            <span>350$</span>
+          </div>
+        </div>
+        <div class="menu--container__card" data-aos="fade-up" data-aos-duration="1500">
+
+          <figure class="menu--container__card--img">
+               <img src="./menu/img-5.jpg" alt="">
+               <button data-name = "cut Chicken" data-img = "./menu/img-5.jpg" data-price = "150$" class = "mybtn">Add To Cart</button>
+          </figure>
+
+          <div class="menu--container__card--content">
+            <div class="row">
+              <h3 class="cart-name "> cut Chicken </h3>
+              <div class="icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+
+            <p>If you are hungry eact chicken</p>
+            <span>150$</span>
+          </div>
+        </div>
+        <div class="menu--container__card"  data-aos="fade-up" data-aos-duration="1500">
+
+          <figure class="menu--container__card--img">
+               <img src="./menu/img-6.jpg" alt="">
+               <button data-name = "..With Potatos" data-img = "./menu/img-6.jpg" data-price = "180$" class = "mybtn">Add To Cart</button>
+          </figure>
+
+          <div class="menu--container__card--content">
+            <div class="row">
+              <h3 class = "cart-name">With potatos</h3>
+              <div class="icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+
+            <p>If you are hungry eact chicken</p>
+            <span>180$</span>
+          </div>
+        </div>
+        <div class="menu--container__card"  data-aos="fade-up" data-aos-duration="1500">
+
+          <figure class="menu--container__card--img">
+               <img src="./menu/img-7.jpg" alt="">
+               <button data-name = "With all" data-img = "./menu/img-7.jpg" data-price = "300$" class = "mybtn">Add To Cart</button>
+          </figure>
+
+          <div class="menu--container__card--content">
+            <div class="row">
+              <h3 class = "cart-name">with all</h3>
+              <div class="icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+
+            <p>If you are hungry eact chicken</p>
+            <span>300$</span>
+          </div>
+        </div>
+        <div class="menu--container__card"  data-aos="fade-up" data-aos-duration="1500">
+
+          <figure class="menu--container__card--img">
+               <img src="./menu/img-8.jpg" alt="">
+               <button data-name = "Grilled Chicken with soos" data-img = "./menu/img-8.jpg" data-price = "180$" class = "mybtn">Add To Cart</button>
+          </figure>
+
+          <div class="menu--container__card--content">
+            <div class="row">
+              <h3>Grilled Chicken</h3>
+              <div class="icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+
+            <p>If you are hungry eact chicken</p>
+            <span>180$</span>
+          </div>
+        </div>
+
+
+
+        </div>
+    </div>
+</section>
+
+<!-- Menu End -->
+
+<!-- Contact Start -->
+<section class="contact" id="contact">
+  <div class="contact--container">
+    <figure class="contact--container__img"  data-aos="fade-left" data-aos-duration="2000">
+      <img src="./Images/contact.png" alt="">
+    </figure>
+    <fieldset class="form"  data-aos="fade-right" data-aos-duration="2000">
+      <h2>contact <span>Us</span></h2>
+      <form action="">
+        <input type="text"  placeholder="Enter Your Name">
+        <input type="email"  placeholder="Enter Your Email">
+        <input type="password"  placeholder="Enter Your Password">
+        <input type="submit" value="Submit">
+
+        <p>Sign Up with <a href="#">Google</a> </p>
+      </form>
+    </fieldset>
+  </div>
+</section>
+<!-- Contact end -->
+
+
+<!-- Footer Start -->
+<footer  data-aos="fade-up" data-aos-duration="2000">
+    <div class="company"  data-aos="fade-up" data-aos-duration="2000">
+      <div class="title">Company</div>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Altifate Program</a></li>
+      </ul>
+    </div>
+    <div class="helping"  data-aos="fade-up" data-aos-duration="2000">
+      <div class="title">Get Help</div>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">shipping</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Order Status</a></li>
+      </ul>
+    </div>
+    <div class="shop"  data-aos="fade-up" data-aos-duration="2000">
+      <div class="title">Online Food</div>
+      <ul>
+        <li><a href="#">Chicken</a></li>
+        <li><a href="#">Sausages</a></li>
+        <li><a href="#">Potatos</a></li>
+        <li><a href="#">grilling</a></li>
+      </ul>
+    </div>
+
+    <div class="follow"  data-aos="fade-up" data-aos-duration="2000">
+      <h2 class="title">Follow Us</h2>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </div>
+</footer>
+<!-- Footer End -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="function.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+
+    );
+  </script>
+</body>
+
+</html>
